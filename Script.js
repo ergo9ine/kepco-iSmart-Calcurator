@@ -18,28 +18,29 @@ function consolelog(a,Load,h,k){
 	if(Load==1){L=`경부하`}else if(Load==2){L=`중간부하`}else{L=`최대부하`}
 	console.log(`${M} ${L} 유효전력 ${h}, 무효전력 ${k}`)
 }
+function err(){console.log("Month Error.")}
 (function(f){(function(a){
-	if(11<=a||2>=a){h=k=0;for(var d in n)w(d);
+	if(11<=a||2>=a){h=k=0;for(var d of n)w(d);
 	consolelog(a,1,h,k)}
 	else if(3==a||4==a||5==a||9==a||10==a){h=k=0;for(d of n)w(d);
 	consolelog(a,1,h,k)}
-	else if(0==a||13<=a)console.log("Month Error.");else{h=k=0;for(d of n)w(d);
+	else if(0==a||13<=a)err();else{h=k=0;for(d of n)w(d);
 	consolelog(a,1,h,k)}
 })(f);
 (function(a){
-	if(11<=a||2>=a){h=k=0;for(var d in m)w(d);
+	if(11<=a||2>=a){h=k=0;for(var d of m)w(d);
 	consolelog(a,2,h,k)}
 	else if(3==a||4==a||5==a||9==a||10==a){h=k=0;for(d of v)w(d);
 	consolelog(a,2,h,k)}
-	else if(0==a||13<=a)console.log("Month Error.");else{h=k=0;for(d of v)w(d);
+	else if(0==a||13<=a)err();else{h=k=0;for(d of v)w(d);
 	consolelog(a,2,h,k)}
 })(f);
 (function(a){
-	if(11<=a||2>=a){h=k=0;for(var d in l)w(d);
+	if(11<=a||2>=a){h=k=0;for(var d of l)w(d);
 	consolelog(a,3,h,k)}
 	else if(3==a||4==a||5==a||9==a||10==a){h=k=0;for(d of u)w(d);
 	consolelog(a,3,h,k)}
-	else if(0==a||13<=a)console.log("Month Error.");else{h=k=0;for(d of u)w(d);
+	else if(0==a||13<=a)err();else{h=k=0;for(d of u)w(d);
 	consolelog(a,3,h,k)}
 })(f)})(c);
 console.log(`총 유효전력 ${e.toString().slice(0,7)}, 총 무효전력 ${g.toString().slice(0,6)}`)
