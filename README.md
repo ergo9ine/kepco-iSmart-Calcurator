@@ -4,5 +4,5 @@
 1. [iSmart](https://pccs.kepco.co.kr/iSmart/) 에 로그인합니다.
 2. 종합페이지에서 계산할 날짜를 선택후 조회를 누릅니다.
 3. 해당 날짜가 조회가 완료되면 F12를 눌러 Web developer Tool을 켭니다.
-4. Console Window의 Command Line [Script](https://github.com/ergo9ine/kepco-ismart-Calcurator/blob/master/Script.js)를 복사 붙여넣기합니다.
+4. Console Window의 Command Line에 [Script](https://github.com/ergo9ine/kepco-ismart-Calcurator/blob/master/Script.js)를 복사 붙여넣기합니다.
 5. Console Window에서 Result를 확인합니다.
