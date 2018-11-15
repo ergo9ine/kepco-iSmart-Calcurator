@@ -1,5 +1,5 @@
 var b=document.querySelector("frame").contentDocument,
-	c=Number(document.querySelector("frame").contentDocument.querySelector("select[name=month]>[selected='']").value),
+	c=Number(b.querySelector("select[name=month]>[selected='']").value),
 	e=0,g=0,h=0,k=0,l=[11,12,18,19,20,23],m=[10,13,14,15,16,17,21,22],n=[1,2,3,4,5,6,7,8,9,24],u=[11,12,14,15,16,17],v=[10,13,18,19,20,21,22,23];
 function w(f){
 	var a=f;13<=a&&(a-=12);
