@@ -16,7 +16,7 @@ function consolelog(a,Load,h,k){
 	var M,L;
 	if(11<=a||2>=a){M=`겨울철`}else if(3==a||4==a||5==a||9==a||10==a){M=`봄·가을철`}else{M=`여름철`}
 	if(Load==1){L=`경부하`}else if(Load==2){L=`중간부하`}else{L=`최대부하`}
-	console.log(`${M} ${L} 유효전력 ${h}, 무효전력 ${k}`)
+	console.log(`${M} ${L} 유효전력 ${h.toFixed(2)}, 무효전력 ${k.toFixed(2)}`)
 }
 function err(){console.log("Month Error.")}
 (function(f){(function(a){
@@ -43,4 +43,4 @@ function err(){console.log("Month Error.")}
 	else if(0==a||13<=a)err();else{h=k=0;for(d of u)w(d);
 	consolelog(a,3,h,k)}
 })(f)})(c);
-console.log(`총 유효전력 ${e.toString().slice(0,7)}, 총 무효전력 ${g.toString().slice(0,6)}`)
+console.log(`총 유효전력 ${e.toFixed(2)}, 총 무효전력 ${g.toFixed(2)}`)
